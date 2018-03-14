@@ -1,0 +1,83 @@
+.ProjectContainer {
+    border-bottom: 2px solid #456990;
+    height: 100vh;
+    width: 80vw;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5vh auto;
+}
+
+
+.ProjectHeader {
+    color: #71F79F;
+    font-size: 2em;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.ProjectHeader:hover {
+    background-color: #71F79F;
+    color: #456990;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ProjectImage {
+    height: 50vh;
+    border-radius: 10px;
+    margin: 2vh 0vh;
+    width: 84vw;
+}
+
+.ProjectParagraph {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+.techContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .ProjectContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .ProjectInfoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7vw;
+        width: 39vw;
+         
+    }
+
+    .ProjectHeader {
+        color: #71F79F;
+        font-size: 3.2em;
+
+    }
+
+    .ProjectImage {
+        height: 45vh;
+        border-radius: 10px;
+        margin: 2vh 0vh;
+        width: 55vw;
+    }
+
+    .ProjectParagraph {
+        color: white;
+    }
+}

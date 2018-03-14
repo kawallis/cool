@@ -1,0 +1,111 @@
+.Contact-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: 1vh auto;
+    padding: none;
+}
+
+.Contact-Container-Submitted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    margin: 25vh auto;
+    padding: none;
+    color: #71F79F;
+    border-radius: 100%;
+    border: 3px solid #71F79F;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+form {
+    background-color: #456990;
+    margin-top: 20vh;
+    padding: 6vh;
+    height: 90vh;
+    width: 70vw;
+    color: #71F79F;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.FormContents {
+    padding-left: 12%;
+}
+
+.InputField {
+    display: block;
+    margin: 2vh 0vh;
+    width: 85%;
+    height: 5vh;
+    background-color: #394053;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.textField {
+    display: block;
+    margin: 2vh 0vh;
+    width: 85%;
+    height: 10vh;
+    background-color: #394053;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.textField:focus {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.InputField:focus {
+    color: white;
+    font-size: 1.5em;
+}
+
+label {
+    margin-top: 2.5vh;
+}
+
+.submitButton {
+    background-color: #394053;
+    text-decoration: none;
+    width: 85%;
+    height: 8vh;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: #394053;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    form {
+        width: 40vw;
+        height: 80%;
+    }
+}

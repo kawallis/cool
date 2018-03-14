@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "classnames": "^2.2.5",
+    "lodash.range": "^3.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-motion": "^0.5.0",
+    "react-reveal": "^0.1.1",
+    "react-reveal-text": "0.0.3",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-scroll-effects": "^1.0.13",
+    "react-typewriter": "^0.4.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && npm run copy",
+    "copy": "rm -rf ../portfoliobackend/public && cp -R ./build ../portfoliobackend/public",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:4000/"
+}

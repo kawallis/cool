@@ -1,0 +1,76 @@
+.Collection {
+    width: 80vw;
+    height: 30vh;
+    font-size: 1em;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 2vh;
+    color: white;
+    background-repeat: cover;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    
+}
+
+
+
+.YoungDivvy {
+    height: 100%;
+    width: 100vw;
+    font-size: 3em;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 11;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.collectionPics {
+    max-height: 85vw;
+    border-radius: 10px;
+    z-index: 5;
+    max-width: 85vw;
+}
+
+.exitButton {
+    position: absolute;
+    top: 0vh;
+    left: 85vw;
+    z-index: 12;
+    color: white;
+    font-size: .75em;
+    margin: none;
+}
+
+.arrows {
+    margin: none;
+    font-size: .5em;
+     z-index: 5;
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    .Collection {
+        width: 45vh;
+        height: 45vh;
+        font-size: 1em;
+        background-size: cover;
+        transition: border-radius .75s;
+    }
+    .Collection:hover {
+        border-radius: 100%;
+        background-color: #71F79F;
+    }
+
+    @keyframes radiusChanger {
+        from {border-radius: 0px;}
+        to {border-radius: 200px;}
+    }
+}

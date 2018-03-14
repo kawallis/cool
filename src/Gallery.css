@@ -1,0 +1,23 @@
+
+    .Gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20vh;
+        width: 100vw;
+    }
+
+
+@media only screen and (min-width: 800px) {
+    .Gallery {
+        flex-flow: row wrap;
+        flex-direction: row;
+    }
+
+    .card {
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+}
